@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+</head>
+        
+<body>
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: #7a0fa8;
+      padding: 15px 2%; margin bottom: 20px;
+    }
+
+    .navbar-brand img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-nav {
+      gap: 20px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #b9b9ff;
+    }
+
+    .navbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-signup {
+      color: white;
+      border: 0.2px solid white;
+      background: transparent;
+      padding: 2px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn-signup:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      color: white;
+    }
+
+    .btn-login {
+      color: #17172f;
+      background-color: white;
+      border: 1px solid white;
+      padding: 2px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-login:hover {
+      background-color: #e9e9f0;
+      color: #17172f;
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    @media (max-width: 991px) {
+      .navbar-nav {
+        gap: 5px;
+        padding: 15px 0;
+      }
+
+      .navbar-actions {
+        padding-bottom: 15px;
+      }
+
+      .navbar-collapse {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+
+      <!-- Logo on the left -->
+      <a class="navbar-brand" href="#">
+        <img src="https://static.canva.com/web/images/856bac30504ecac8dbd38dbee61de1f1.svg" alt="Company Logo">
+      </a>
+
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+        <!-- Centred navigation links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Design</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plans</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+
+        <!-- Buttons on the right -->
+        <div class="navbar-actions">
+          <a href="#" class="btn-signup">Sign up</a>
+          <a href="#" class="btn-login">Log in</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  
+
+
+  
+
+<div style="text-align: center; padding: 15px 15px 0; font-size: 80px; font-weight: 600; font-family: 'Canva Sans', sans-serif; line-height: 1; color: purple;">
+  What will you<br>design today?
+</div>
+
+<div style="text-align: center; margin-top: 20px; padding: 0 15px; font-size: 20px; font-family: 'Canva Sans', sans-serif; color: #333333;">
+  Make AI-powered social posts, videos, presentations, and more with Canva.
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+  <button type="button" style="background-color: white; color: purple; border: 1px solid purple; padding: 10px 35px; font-size: 14px; font-weight: 600; border-radius: 15px; cursor: pointer;">
+    Start designing
+  </button>
+</div>
+
+<<div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; padding: 0 15px;">
+
+  <img src="https://content-management-files.canva.com/67d58c37-ef51-49d2-a73d-d9c16bbb2e9f/floating-elements-font.png" alt="Floating font" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/ef8d0b0b-20a1-4b4d-9c62-e2099cfd9e66/floating-elements-ai-image.png" alt="AI image" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/7365175c-ed25-4ee1-b1ae-29c87c2f3538/floating-elements-social.png" alt="Social media design" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/ae5e1c8b-d4fd-436a-bfb2-fb9ae9c36475/floating-elements-video.png" alt="Video design" style="width: 120px; height: 120px; object-fit: contain;">
+
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; padding: 0 15px;">
+
+  <img src="https://content-management-files.canva.com/90620cc0-c92f-4a5b-8c9b-c65743f9997a/floating-elements-color-wheel.png" alt="Color wheel" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/3a6ec7cd-37c4-4270-b65d-42595f6b0f4b/floating-elements-sticky.png" alt="Sticky note" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/4684b1c9-92b5-4fb2-943a-1fab339f5d57/floating-elements-canva-ai.png" alt="Canva AI" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/850101cb-0970-40ab-8179-128095512a54/floating-elements-background-remover.png" alt="Background remover" style="width: 120px; height: 120px; object-fit: contain;">
+
+  <img src="https://content-management-files.canva.com/8b8264be-2599-450a-a114-2a6e670f3529/floating-elements-code.png" alt="Code" style="width: 120px; height: 120px; object-fit: contain;">
+
+</div>
+
+<div style="text-align: center; padding: 15px 15px 0; font-size: 50px; font-weight: 600; font-family: 'Canva Sans', sans-serif; line-height: 1; color: purple;">
+  Tools to power your best work
+</div>
+
+ 
+<style>
+  .image-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.4s ease;
+  }
+
+  .large-box {
+    aspect-ratio: 680 / 423;
+  }
+
+  .small-box {
+    aspect-ratio: 332 / 423;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+
+  .image-box:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-box:hover img {
+    transform: scale(1.08);
+  }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peek the Neighbour Carousel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Carousel window */
+    .carousel-viewport {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px 0 25px;
+    }
+
+    /* Slides move horizontally */
+ 
+.carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0 25px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 88%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.image-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.large-box {
+  aspect-ratio: 680 / 423;
+}
+
+.small-box {
+  aspect-ratio: 332 / 423;
+}
+
+/* Top row: big image, then small image */
+.image-box:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.image-box:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* Bottom row: small image, then big image */
+.image-box:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.image-box:nth-child(4) {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.4s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.image-box:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.image-box:hover img {
+  transform: scale(1.08);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.4s ease;
+}
+
+.large-box {
+  aspect-ratio: 680 / 423;
+  grid-column: span 2;
+}
+
+.small-box {
+  aspect-ratio: 332 / 423;
+  grid-column: span 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.image-box:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.image-box:hover img {
+  transform: scale(1.08);
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: #ddd;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    flex-basis: 92%;
+  }
+
+  .image-grid {
+    gap: 5px;
+  }
+
+  .image-box {
+    border-radius: 8px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid px-4 my-3">
+
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-slide">
+          <div class="image-grid">
+            <div class="image-box large-box">
+              <img src="magic_layers_23.png"
+                   alt="Creative workspace">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="ai-magic-eraser-1-3_ssa.png"
+                   alt="Graphic design">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="social-bgremover-1-3_ssa.png"
+                   alt="Creative project">
+            </div>
+
+            <div class="image-box large-box">
+              <img src="https://content-management-files.canva.com/32901d52-783f-4e76-9667-f913f8e27ef5/ai-magic-write-2-3_ssa.png"
+                   alt="Modern office">
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: DUPLICATED CODE WITH DIFFERENT IMAGES -->
+        <div class="carousel-slide">
+          <div class="image-grid">
+            <div class="image-box large-box">
+              <img src="https://content-management-files.canva.com/2b4ad023-6df0-4cfd-8e75-1ecbfa17d3c3/presentations-2-3_ssa.png"
+                   alt="Office workspace">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="https://content-management-files.canva.com/d201d169-2b15-47f9-b589-d192cc387d43/presentations-templates-1-3_ssa.png"
+                   alt="Design inspiration">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="https://content-management-files.canva.com/32c28243-1ad0-448e-8c89-cbce1d493804/presentations-brand-kit-1-3_ssa.png"
+                   alt="Creative desk">
+            </div>
+
+            <div class="image-box large-box">
+              <img src="https://content-management-files.canva.com/d7ae4319-f0ac-4c80-8715-88d4bd95caf5/presentations-animations-2-3_ssa.png"
+                   alt="Bright office">
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: DUPLICATED CODE AGAIN -->
+        <div class="carousel-slide">
+          <div class="image-grid">
+            <div class="image-box large-box">
+              <img src="https://content-management-files.canva.com/3b31eb82-6cf3-4d4b-ae51-65d85a29eb7e/social-templates-2-3_ssa.png"
+                   alt="Modern creative office">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="https://content-management-files.canva.com/c3d9b18e-7a1d-4c66-8be9-2e27cd18d044/social-bgremover-1-3_ssa.png"
+                   alt="Writing and planning">
+            </div>
+
+            <div class="image-box small-box">
+              <img src="https://content-management-files.canva.com/11144a4f-e7ed-4ccc-940f-b693737d94c0/social-upscale-1-3_ssa.png"
+                   alt="Laptop workspace">
+            </div>
+
+            <div class="image-box large-box">
+              <img src="https://content-management-files.canva.com/777d5e77-82fd-4b52-8e19-c336c62633dd/social-resize-2-3_ssa.png"
+                   alt="Office interior">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn"
+              aria-label="Previous slide">&#8592;</button>
+
+      <button class="carousel-btn" id="nextBtn"
+              aria-label="Next slide">&#8594;</button>
+    </div>
+
+  </div>
+
+  <script>
+
+const track = document.getElementById("carouselTrack");
+const slides = document.querySelectorAll(".carousel-slide");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  const slide = slides[currentIndex];
+
+  // Centre the active slide in the viewport
+  const viewport = track.parentElement;
+  const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+  const viewportCenter = viewport.clientWidth / 2;
+
+  let position = slideCenter - viewportCenter;
+
+  // Keep the carousel movement within its limits
+  const maxPosition = track.scrollWidth - viewport.clientWidth;
+  position = Math.max(0, Math.min(position, maxPosition));
+
+  track.style.transform = `translateX(-${position}px)`;
+
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === slides.length - 1;
+}
+
+nextBtn.addEventListener("click", function () {
+  if (currentIndex < slides.length - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener("click", function () {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+window.addEventListener("resize", updateCarousel);
+
+updateCarousel();
+
+  </script>
+
+  <div style="text-align: center; padding: 15px 15px 0; font-size: 50px; font-weight: 600; font-family: 'Canva Sans', sans-serif; line-height: 1; color: purple;">
+  Tools to power your best work
+</div>
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
